@@ -36,5 +36,3 @@ No AI capabilities will be added in this chapter, the work on this chapter lays 
 * Task 4 - Create Logic App
 	* Configure EventGrid Trigger to run when file loaded to Blob Storagev
 	* Configure CosmosDb Connect to create record with path to medicine image file on Blob storage
-
-[Next Chapter](./chatper2.md)
