@@ -139,4 +139,4 @@ In this chapter we created resources which will be used in building the solution
 * Cosmos DB Account
 * Logic App
 
-[Previous Chapter](../chapter1/Readme.md)[Next Chapter](../chapter3/Readme.md) | 
+[Previous Chapter](../chapter1/Readme.md) | [Next Chapter](../chapter3/Readme.md)
