@@ -30,12 +30,13 @@ No AI capabilities will be added in this chapter, the work on this chapter lays 
 * [Task 1: Create Resource Group](#Task-1:-Create-Resource-Group)
 * [Task 2: Create Storage Account](#Task-2:-Create-Storage-Account)
 * [Task 3: Create Cosmos DB Account](#Task-3:-Create-Cosmos-DB-Account)
+* [Task 4: Create Logic App](#Task-4:-Create-Logic-App)
 
 ***
 
 Sign in to the Azure Portal (if you don't have an Azure Subscription you can create one for free - <https://azure.microsoft.com/en-us/free/>)
 
-### **Task 1: Create Resource Group**
+### Task 1: Create Resource Group
 
 All Resources for the solution will be created in a Resource Group
 1. Expand the menu on the Azure Portal by clicking menu icon on top left corner and then click Resource Groups
@@ -44,7 +45,7 @@ All Resources for the solution will be created in a Resource Group
 
 2. Click *+ Add* button in the top left
 
-<img src="./images/AddResourceGroup.GIF" alt="Expand Menu" width="50%" height="50%"/>
+<img src="./images/AddResourceGroup.GIF" alt="Add Resource Group" width="50%" height="50%"/>
 
 3. Fill out the Resource Group details
 
@@ -54,19 +55,20 @@ All Resources for the solution will be created in a Resource Group
 
 	c. Click *Review + create* button on the bottom left
 
-<img src="./images/ResourceGroupDetails.GIF" alt="Expand Menu" width="50%" height="100%"/>
+<img src="./images/ResourceGroupDetails.GIF" alt="Resource Group Details" width="50%" height="100%"/>
 
 4. Review the entered Resource Group Details and click Create on the bottom left
 
-<img src="./images/ResourceGroupValidate.GIF" alt="Expand Menu" width="50%" height="100%"/>
+<img src="./images/ResourceGroupValidate.GIF" alt="Resource Group Validate" width="50%" height="100%"/>
 
 5. Wait for the Resource Group creation confirmation pop-up to show on the top right and then proceed to the next Task
 
 
-### **Task 2: Create Storage Account**
+### Task 2: Create Storage Account
 1. Expand the menu on the Azure Portal by clicking menu icon on top left corner and then click *+ Create a resource*
 
 2. At this point Azure Portal should show New resouce creation screen
+	
 	a. Start typing *Storage Account*, as you are typing Storage Account selection will be displayed below the textbox
 
 	b. Select Storage Account and Storage Account creation screen is displayed
@@ -75,17 +77,19 @@ All Resources for the solution will be created in a Resource Group
 
 	d. Enter the Storage Account details - select the newly created Resource Group, specify storage account name which needs to be globally unique (add numbers like 123, 456, etc. whatever to make it unique), select location same as the resource group from Task 1, leave remaining selection as default and click *Review + create* button on bottom left
 
-<img src="./images/StorageAccountDetail.GIF" alt="Expand Menu" width="50%" height="50%"/>
+<img src="./images/StorageAccountDetail.GIF" alt="Storage Account Detail" width="50%" height="50%"/>
 
 3. Review the Storage Account details and click *Create* button
 
 4. Wait for the resource creation to complete and then proceed to the next Task
 
 ### Task 3: Create Cosmos DB Account
+An empty account will be created in this chapter, databsase and collection will be added in subsequent chapters
 
 1. Expand the menu on the Azure Portal by clicking menu icon on top left corner and then click *+ Create a resource*
 
 2. At this point Azure Portal should show New resouce creation screen
+	
 	a. Start typing *cosmos*, as you are typing Azure Cosmos DB selection will be displayed below the textbox
 
 	b. Select Azure Cosmos DB and Cosmos DB creation screen is displayed
@@ -94,16 +98,41 @@ All Resources for the solution will be created in a Resource Group
 
 	d. Enter the Cosmos DB account details - select the resource group created in Task 1 above, specify unique account name, for API select *Core(SQL), select Location the same as the Task 1, leave remaining selection as default and click *Review + create* button on bottom left
 
-<img src="./images/CosmosDBDetail.GIF" alt="Expand Menu" width="50%" height="50%"/>
+<img src="./images/CosmosDBDetail.GIF" alt="Cosmos DB Detail" width="50%" height="50%"/>
 
 3. Review the Cosmos DB details and click *Create* button
 
 4. Wait for the resource creation to complete and then proceed to the next Task
 
-<!--
-* Task 4 - Create Logic App
-	* Configure EventGrid Trigger to run when file loaded to Blob Storage
-	* Configure CosmosDb Connect to create record with path to medicine image file on Blob storage
--->
 
+### Task 4: Create Logic App
+An empty logic app will be created in this chapter so its pretty much a placeholder, triggers and actions will be added in subsequent chapters
+
+1. Expand the menu on the Azure Portal by clicking menu icon on top left corner and then click *+ Create a resource*
+
+2. At this point Azure Portal should show New resouce creation screen
+
+	a. Start typing *logic app*, as you are typing Logic App selection will be displayed below the textbox
+
+	b. Select Logic App and Logic App creation screen is displayed
+
+	c. Click *Create* button and Logic App Detail screen is displayed
+
+	d. Enter Logic App details - specify app name, for Resource Group select *Use exising* option and select the resource group created in Task 1 above, select Location the same as the Task 1, leave remaining selection as default and click *Create* button on bottom left
+
+<img src="./images/LogicAppDetail.GIF" alt="Logic App Detail" width="50%" height="50%"/>
+
+4. Wait for the resource creation to complete, notification section on Azure Portal shows the resource creation progress 
+
+<img src="./images/ResourceCreationNotification.GIF" alt="Resource Creation Notification" width="50%" height="50%"/>
+
+
+## Review
+In this chapter we created resources which will be used in building the solution in the subsequent chapters, at this stage the resources are empty and don't have any content. You created the following resources: 
+* Resource Group
+* Storage Account 
+* Cosmos DB Account
+* Logic App
+
+[Next Chapter 3](../chapter3/Readme.md)
 [Back to Chapter 1](../chapter1/Readme.md)

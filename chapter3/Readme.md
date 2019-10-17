@@ -9,3 +9,6 @@ Upload a Medicine bottle image to Azure Storage Account and have a record create
 ## Architecture Diagram
 
 > TODO: Architecture Diagram
+
+
+[Back to Chapter 2](../chapter2/Readme.md)
