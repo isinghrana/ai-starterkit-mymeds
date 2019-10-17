@@ -63,6 +63,7 @@ All Resources for the solution will be created in a Resource Group
 
 5. Wait for the Resource Group creation confirmation pop-up to show on the top right and then proceed to the next Task
 
+***
 
 ### Task 2: Create Storage Account
 1. Expand the menu on the Azure Portal by clicking menu icon on top left corner and then click *+ Create a resource*
@@ -82,6 +83,8 @@ All Resources for the solution will be created in a Resource Group
 3. Review the Storage Account details and click *Create* button
 
 4. Wait for the resource creation to complete and then proceed to the next Task
+
+***
 
 ### Task 3: Create Cosmos DB Account
 An empty account will be created in this chapter, databsase and collection will be added in subsequent chapters
@@ -104,6 +107,7 @@ An empty account will be created in this chapter, databsase and collection will 
 
 4. Wait for the resource creation to complete and then proceed to the next Task
 
+***
 
 ### Task 4: Create Logic App
 An empty logic app will be created in this chapter so its pretty much a placeholder, triggers and actions will be added in subsequent chapters
@@ -126,6 +130,7 @@ An empty logic app will be created in this chapter so its pretty much a placehol
 
 <img src="./images/ResourceCreationNotification.GIF" alt="Resource Creation Notification" width="50%" height="50%"/>
 
+***
 
 ## Review
 In this chapter we created resources which will be used in building the solution in the subsequent chapters, at this stage the resources are empty and don't have any content. You created the following resources: 
