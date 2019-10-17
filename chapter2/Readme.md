@@ -1,7 +1,7 @@
-# Chapter 2 - Upload Image and run the process to save Information to Database
+# Chapter 2 - Resource Creation
 
 ## Objective
-Upload a Medicine bottle image to Azure Storage Account and have a record created in Azure CosmosDB Database with location of the image on the storage account
+Create Resources to be used for the solution in the subsequent chapters 
 
 ## Azure Concepts/Terms 
 
@@ -19,13 +19,9 @@ No AI capabilities will be added in this chapter, the work on this chapter lays 
 * CosmosDb - <https://docs.microsoft.com/en-us/azure/cosmos-db/>
 * Logic App Service - <https://docs.microsoft.com/en-us/azure/logic-apps/>
 
-
-## Architecture Diagram
-> TODO: Architecture Diagram
-
 ## Exercise
 
-> TODO: This section is not completed, on the Logic App step it will get bigger with details on how to implement with screenshots 
+> TODO: This section is not complete ye
 
 ***
 
@@ -33,6 +29,7 @@ No AI capabilities will be added in this chapter, the work on this chapter lays 
 
 * [Task 1: Create Resource Group](#Task-1:-Create-Resource-Group)
 * [Task 2: Create Storage Account](#Task-2:-Create-Storage-Account)
+* [Task 3: Create Cosmos DB Account](#Task-3:-Create-Cosmos-DB-Account)
 
 ***
 
@@ -84,7 +81,7 @@ All Resources for the solution will be created in a Resource Group
 
 4. Wait for the resource creation to complete and then proceed to the next Task
 
-### **Task 3: Create Cosmos DB Account**
+### Task 3: Create Cosmos DB Account
 
 1. Expand the menu on the Azure Portal by clicking menu icon on top left corner and then click *+ Create a resource*
 
@@ -109,4 +106,4 @@ All Resources for the solution will be created in a Resource Group
 	* Configure CosmosDb Connect to create record with path to medicine image file on Blob storage
 -->
 
-[Back to Chapter 1](../chapter1-introduction.md)
+[Back to Chapter 1](../chapter1/Readme.md)

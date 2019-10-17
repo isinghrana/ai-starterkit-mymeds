@@ -25,4 +25,4 @@ The main pre-requisite is an Azure Subscription and if you don't have an Azure S
 
 A variety of  Azure Cloud services will be used as the technology stack, the costs of these services are very minimal and should be covered well under the Trial Subscription Credits. Even if not using the Trial Subscription, usage based pricing of Cloud Platform does not require any upfront commitment and it's not expected to cost more than a few dollars.
 
-[Go to Chapter 2](./chapter2/chapter2.md)
+[Go to Chapter 2](../chapter2/Readme.md)
