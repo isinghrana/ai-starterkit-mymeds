@@ -55,7 +55,7 @@ All Resources for the solution will be created in a Resource Group
 
 	c. Click *Review + create* button on the bottom left
 
-<img src="./images/ResourceGroupDetail.GIF" alt="Resource Group Details" width="50%" height="100%"/>
+<img src="./images/ResourceGroupDetails.GIF" alt="Resource Group Details" width="50%" height="100%"/>
 
 4. Review the entered Resource Group Details and click Create on the bottom left
 
@@ -139,5 +139,4 @@ In this chapter we created resources which will be used in building the solution
 * Cosmos DB Account
 * Logic App
 
-[Next Chapter 3](../chapter3/Readme.md)
-[Back to Chapter 1](../chapter1/Readme.md)
+[Previous Chapter](../chapter1/Readme.md)[Next Chapter](../chapter3/Readme.md) | 
