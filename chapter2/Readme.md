@@ -55,7 +55,7 @@ All Resources for the solution will be created in a Resource Group
 
 	c. Click *Review + create* button on the bottom left
 
-<img src="./images/ResourceGroupDetails.GIF" alt="Resource Group Details" width="50%" height="100%"/>
+<img src="./images/ResourceGroupDetail.GIF" alt="Resource Group Details" width="50%" height="100%"/>
 
 4. Review the entered Resource Group Details and click Create on the bottom left
 
