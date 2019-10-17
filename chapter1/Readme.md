@@ -16,9 +16,6 @@ In certain cases patient not taking the medication on time can lead to much grea
 5. Online Pricing Api (like GoodRx Api - <https://www.goodrx.com/developer>) can be used to help find cheaper price for the medication hence reducing cost
 
 
-## Security and Compliance
-> [TODO]
-
 ## Audience
 The courses can be used by health care professionals or technology professionals to gain better understanding on how AI can be used to improve patient health at minimal costs. Such solutions can be implemented by Health Care Providers themselves, ISVs who make software solutions for the Health Care industry or even patients interested in technology.
 
@@ -28,4 +25,4 @@ The main pre-requisite is an Azure Subscription and if you don't have an Azure S
 
 A variety of  Azure Cloud services will be used as the technology stack, the costs of these services are very minimal and should be covered well under the Trial Subscription Credits. Even if not using the Trial Subscription, usage based pricing of Cloud Platform does not require any upfront commitment and it's not expected to cost more than a few dollars.
 
-[Go to Chapter 2](./chapter2.md)
+[Go to Chapter 2](../chapter2/Readme.md)
