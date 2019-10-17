@@ -28,9 +28,15 @@ No AI capabilities will be added in this chapter, the work on this chapter lays 
 
 > TODO: This section is not completed, on the Logic App step it will get bigger with details on how to implement with screenshots 
 
+### Contents
+
+* [Task 1: Create Resource Group](#Task-1:-Create-Resource-Group)
+* [Task 2: Create Storage Account](#Task-2:-Create-Storage-Account)
+
+
 Sign in to the Azure Portal (if you don't have an Azure Subscription you can create one for free - <https://azure.microsoft.com/en-us/free/>)
 
-**Task 1: Create Resource Group**
+### **Task 1: Create Resource Group**
 
 All Resources for the solution will be created in a Resource Group
 1. Expand the menu on the Azure Portal by clicking menu icon on top left corner and then click Resource Groups
@@ -43,7 +49,7 @@ All Resources for the solution will be created in a Resource Group
 
 3. Fill out the Resource Group details
 
-	a. Enter name for the Resource Group 
+	a. Enter name for the Resource Group of your choice
 
 	b. Selct Region closest to you
 
@@ -54,14 +60,35 @@ All Resources for the solution will be created in a Resource Group
 4. Review the entered Resource Group Details and click Create on the bottom left
 
 <img src="./images/ResourceGroupValidate.GIF" alt="Expand Menu" width="50%" height="100%"/>
+
+5. Wait for the Resource Group creation confirmation pop-up to show on the top right and then proceed to the next Task
+
+
+### **Task 2: Create Storage Account**
+1. You might already be on the Resource Groups listing page but if not Expand the menu on the Azure Portal and click Resource Groups to go to Resource Groups listing page. You should see the newly created Resource Group (click *Refresh* button if you don't see the Resouce Group you just created)
+
+2. Click the name of Resource Group for the solution to go to Resource Group detail page, at this point it should be empty so no resources have been created yet. Click *+Add* button to add new resource to the Resource Group
+
+<img src="./images/ResourceGroupDetail.GIF" alt="Expand Menu" width="50%" height="50%"/>
+
+3. At this point Azure Portal should show New resouce creation screen
+	a. Start typing *Storage Account*, as you are typing Storage Account selection will be displayed below the textbox
+	b. Select Storage Account selection and Storage Account Creation screen will be displayed
+	c. Click Create a Storage Account Detail screen will be displayed
+	d. Enter the Storage Account details - verify the Resource Group to be the newly created one, storage account name needs to be globally unique, verify location is the closest to you, leave remaining selection as default and click *Review + create* button on bottom left
+
+<img src="./images/StorageAccountDetail.GIF" alt="Expand Menu" width="50%" height="50%"/>
+
+4. Review the Storage Account details and click *Create* button
+
+5. Wait for the resource creation to complete and then proceed to the next Task
+
 <!--
-* Task 2 - Follow the instruction [here](https://docs.microsoft.com/en-us/azure/storage/common/storage-quickstart-create-account?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json%23create-a-storage-account&tabs=azure-portal#create-a-storage-account-1) to create a new Storage Account keeping the following two points in mind:
-	* Specify Create new Resource Group for the resources (e.g. ai-staterkit-mymeds), this only needs to be unique within your Azure Subscription
-	* Storage Account Name needs to be globally unique (one trick is to use your initials with a number suffix to make it unique)
 * Task 3 - Create CosmosDb Account, create database and collection
 * Task 4 - Create Logic App
 	* Configure EventGrid Trigger to run when file loaded to Blob Storagev
 	* Configure CosmosDb Connect to create record with path to medicine image file on Blob storage
 
 -->
+
 [Back to Chapter 1](../chapter1-introduction.md)
