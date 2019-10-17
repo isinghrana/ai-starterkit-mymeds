@@ -23,16 +23,18 @@ No AI capabilities will be added in this chapter, the work on this chapter lays 
 ## Architecture Diagram
 > TODO: Architecture Diagram
 
-
 ## Exercise
 
 > TODO: This section is not completed, on the Logic App step it will get bigger with details on how to implement with screenshots 
+
+***
 
 ### Contents
 
 * [Task 1: Create Resource Group](#Task-1:-Create-Resource-Group)
 * [Task 2: Create Storage Account](#Task-2:-Create-Storage-Account)
 
+***
 
 Sign in to the Azure Portal (if you don't have an Azure Subscription you can create one for free - <https://azure.microsoft.com/en-us/free/>)
 
@@ -65,30 +67,46 @@ All Resources for the solution will be created in a Resource Group
 
 
 ### **Task 2: Create Storage Account**
-1. You might already be on the Resource Groups listing page but if not Expand the menu on the Azure Portal and click Resource Groups to go to Resource Groups listing page. You should see the newly created Resource Group (click *Refresh* button if you don't see the Resouce Group you just created)
+1. Expand the menu on the Azure Portal by clicking menu icon on top left corner and then click *+ Create a resource*
 
-2. Click the name of Resource Group for the solution to go to Resource Group detail page, at this point it should be empty so no resources have been created yet. Click *+Add* button to add new resource to the Resource Group
-
-<img src="./images/ResourceGroupDetail.GIF" alt="Expand Menu" width="50%" height="50%"/>
-
-3. At this point Azure Portal should show New resouce creation screen
+2. At this point Azure Portal should show New resouce creation screen
 	a. Start typing *Storage Account*, as you are typing Storage Account selection will be displayed below the textbox
-	b. Select Storage Account selection and Storage Account Creation screen will be displayed
-	c. Click Create a Storage Account Detail screen will be displayed
-	d. Enter the Storage Account details - verify the Resource Group to be the newly created one, storage account name needs to be globally unique, verify location is the closest to you, leave remaining selection as default and click *Review + create* button on bottom left
+
+	b. Select Storage Account and Storage Account creation screen is displayed
+
+	c. Click Create and Storage Account Detail screen is displayed
+
+	d. Enter the Storage Account details - select the newly created Resource Group, specify storage account name which needs to be globally unique (add numbers like 123, 456, etc. whatever to make it unique), select location same as the resource group from Task 1, leave remaining selection as default and click *Review + create* button on bottom left
 
 <img src="./images/StorageAccountDetail.GIF" alt="Expand Menu" width="50%" height="50%"/>
 
-4. Review the Storage Account details and click *Create* button
+3. Review the Storage Account details and click *Create* button
 
-5. Wait for the resource creation to complete and then proceed to the next Task
+4. Wait for the resource creation to complete and then proceed to the next Task
+
+### **Task 3: Create Cosmos DB Account**
+
+1. Expand the menu on the Azure Portal by clicking menu icon on top left corner and then click *+ Create a resource*
+
+2. At this point Azure Portal should show New resouce creation screen
+	a. Start typing *cosmos*, as you are typing Azure Cosmos DB selection will be displayed below the textbox
+
+	b. Select Azure Cosmos DB and Cosmos DB creation screen is displayed
+
+	c. Click *Create* button and Cosmos DB Detail screen is displayed
+
+	d. Enter the Cosmos DB account details - select the resource group created in Task 1 above, specify unique account name, for API select *Core(SQL), select Location the same as the Task 1, leave remaining selection as default and click *Review + create* button on bottom left
+
+<img src="./images/CosmosDBDetail.GIF" alt="Expand Menu" width="50%" height="50%"/>
+
+3. Review the Cosmos DB details and click *Create* button
+
+4. Wait for the resource creation to complete and then proceed to the next Task
 
 <!--
-* Task 3 - Create CosmosDb Account, create database and collection
 * Task 4 - Create Logic App
-	* Configure EventGrid Trigger to run when file loaded to Blob Storagev
+	* Configure EventGrid Trigger to run when file loaded to Blob Storage
 	* Configure CosmosDb Connect to create record with path to medicine image file on Blob storage
-
 -->
 
 [Back to Chapter 1](../chapter1-introduction.md)
