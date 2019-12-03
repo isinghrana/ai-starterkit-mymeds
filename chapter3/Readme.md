@@ -79,7 +79,22 @@ Note - Don't forget to click the *Save* button after adding all the settings.
 
 ### Task 3: Deploy Azure Function Code
 
+1. On the Azure Function Detail page, click *Platform features* tab and then click *Container settings* under *Code Deployment* section
 
+<img src="./images/AzureFuncDeployment.GIF" alt="Azure Func Deployment" width="50%" height="50%"/>
 
+2. Code will be deployed from Public Github Repo so select *External* under *Manual Deployment (puhs/sync) section and then click *Continue* button at the bottom.
+
+<img src="./images/AzureFuncDeploymentSetupCodeSource.GIF" alt="Azure Func Deployment - Code Source" width="50%" height="50%"/>
+
+3. Select *App Service build service* for Build Provider (this uses Kudu engine already included in the Azure Function infrastructure as the build service) and then click *Continue* button at the bottom.
+
+<img src="./images/AzureFuncDeploymentBuildProvider.GIF" alt="Azure Func Deployment - Build Provider" width="50%" height="50%"/>
+
+4. Specify the Code Repository configuration - specify *https://github.com/isinghrana/ai-starterkit-mymeds* for Repository, *master* for Branch, leave Repository Type as *Git* and specify No for Private Repository. 
+
+<img src="./images/AzureFuncDeploymentCodeRepoConfig.GIF" alt="Azure Func Deployment - Build Provider" width="50%" height="50%"/>
+
+5. Click *Continue* and then *Finish* button, this starts the deployment of the code to your Azure Function.
 
 [Back to Chapter 2](../chapter2/Readme.md)
