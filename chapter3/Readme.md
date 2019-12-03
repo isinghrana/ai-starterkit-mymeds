@@ -20,8 +20,8 @@ Create Azure Function for reading text from prescription image (C# code is provi
 
 ### Contents
 
-* [Task 1: Create Read Text from Image Azure Function](###Task-1:-Create-Read-Text-from-Image-Azure-Function)
-* [Task 2: Specify Configuration settings for Read Text from Image Azure Function](###Task-2:-Specify-Configuration-settings-for-Read-Text-from-Image-Azure-Function)
+* [Task 1: Create Read Text from Image Azure Function](###task-1:-create-tead-text-from-image-azure-function)
+* [Task 2: Specify Configuration settings for Read Text from Image Azure Function](###task-2:-specify-configuration-settings-for-read-text-from-image-azure-function)
 * [Task 3: Deploy Azure Function Code](###Task-3:-Deploy-Azure-Function-Code)
 * [Task 4: Test Azure Function](###Task-4:-Test-Azure-Function)
 
