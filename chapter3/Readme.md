@@ -20,10 +20,10 @@ Create Azure Function for reading text from prescription image (C# code is provi
 
 ### Contents
 
-* [Task 1: Create Read Text from Image Azure Function)](#Task-1:-Create-Read-Text-from-Image-Azure-Function)
+* [Task 1: Create Read Text from Image Azure Function](#Task-1:-Create-Read-Text-from-Image-Azure-Function)
 * [Task 2: Specify Configuration settings for Read Text from Image Azure Function](#Task-2:-Specify-Configuration-settings-for-Read-Text-from-Image-Azure-Function)
 * [Task 3: Deploy Azure Function Code](#Task-3:-Deploy-Azure-Function-Code)
-* [Task 4: Create Logic App](#Task-4:-Create-Logic-App)
+* [Task 4: Test Azure Function](#Task-4:-Test-Azure-Function)
 
 ### Task 1: Create Read Text from Image Azure Function
 
@@ -112,5 +112,9 @@ Note - Don't forget to click the *Save* button after adding all the settings.
 
 <img src="./images/AzureFuncDeploymentSuccess.GIF" alt="Azure Func Deployment - Success" width="50%" height="50%"/>
 
+
+### Task 4: Test Azure Function
+
+> TODO: Test Azure Function works correctly
 
 [Back to Chapter 2](../chapter2/Readme.md)
