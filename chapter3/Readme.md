@@ -1,7 +1,7 @@
 # Chapter 3 - Create Azure Function for Reading Text from Prescription Image
 
 ## Objective
-Create Azure Function for reading text from prescription image (C# code is provided in the repo so no coding experience is required). The code in Azure Function uses Azure AI Platform capabilies available as part of Compute Vision Cognitive Service.
+Create Azure Function for reading text from prescription image (C# code is provided in the repo so no coding experience is required). The code in Azure Function uses Azure AI Platform capabilies available as part of Compute Vision Cognitive Service. At the end of chapter you will be able use the AI Capabilities to read text from and image.
 
 ## Azure Concepts/Terms 
 
@@ -115,6 +115,40 @@ Note - Don't forget to click the *Save* button after adding all the settings.
 
 ### Task 4: Test Azure Function
 
-> TODO: Test Azure Function works correctly
+In this task you will uplod a test image to Storage Account and then invoke Azure Function to read text from the image. 
+
+1. Download the test image file <a id='testimage1url' href="">Click here to download test image file</a>
+
+2. Browse to the detail page for Storage Account created in Chapter 2, click Containers and the click *+ Container* 
+
+3. Container can be considered a top-level folder in a Storage Account, give an appropriate name to the container. Example - *test-images*. 
+
+<img src="./images/StorageAccountCreateContainer.GIF" alt="Storage Account - Create Container" width="50%" height="50%"/>
+
+4. Click the newly created folder and click *Upload* button on the toolbar to upload the test image downloaded in Step 1 above.
+
+<img src="./images/StorageAccountUploadTestImage.GIF" alt="Storage Account - Upload Test Image" width="50%" height="50%"/>
+
+5. Close the Upload dialog on the right side, click the elipsis *...* next to the test image file to open menu, click *Properties* and the copy the URL for the file.
+
+<img src="./images/StorageAccountTestImage.GIF" alt="Storage Account - Test Image" width="50%" height="50%"/>
+
+<img src="./images/StorageAccountTestImageProperties.GIF" alt="Storage Account - Test Image Properties" width="50%" height="50%"/>
+
+6. Browse to the Azure Function detail page, select the Function and click *Test* tab on the right side to open the Test Dialog.
+
+<img src="./images/AzureFuncTest1.GIF" alt="Azure Func - Test Dialog" width="50%" height="50%"/>
+
+7. Copy the code snippet below and paste into the *Request Body* text box, replace the placeholder text (Paste the Test Image....) with URL of the test image from Step 5 and click *Run* button. Verify that output contains test from the image. 
+
+```
+{
+    "blobUrl": "<Paste Test Image URL from Step 5 here>"
+}
+```
+
+<img src="./images/AzureFuncTestResult.GIF" alt="Azure Func - Test Result" width="50%" height="50%"/>
+
+**Congratulations! At this point you have implemented as Azure Function which uses AI Capabilities of Azure Computer Vision Cognitive Service to read text from an image.**
 
 [Back to Chapter 2](../chapter2/Readme.md)
