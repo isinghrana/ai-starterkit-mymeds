@@ -1,18 +1,31 @@
 # Chapter 3 - Create Azure Function for Reading Text from Prescription Image
 
 ## Objective
-Create Azure Functions for reading text from prescriptino image (C# code is provided in the repo so no coding experience is required). 
+Create Azure Function for reading text from prescription image (C# code is provided in the repo so no coding experience is required). The code in Azure Function uses Azure AI Platform capabilies available as part of Compute Vision Cognitive Service.
 
 ## Azure Concepts/Terms 
 
 * Azure Functions - Azure Functions is a solution for easily running small pieces of code, or "functions," in the cloud. You can write just the code you need for the problem at hand, without worrying about a whole application or the infrastructure to run it.
 
+* Azure Cognitive Services -  are a set of services which bring AI within reach of every developer—without requiring machine-learning expertise. All it takes is an API call to embed the ability to see, hear, speak, search, understand, and accelerate decision-making into your apps.
+
+* Azure Computer Vision Cognitive Service - is one of the Cognitive Services providing AI capability of reading  text from an image.
+
 ## Learn More
 * Azure Functions - <https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview>
+* Azure Cogntiive Services - <https://docs.microsoft.com/en-us/azure/cognitive-services/>
+* Azure Computer Vision Cognitive Services - <https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/>
 
 ***
 
-### Task 1: Create Read Text from Image Azure Function (empty)
+### Contents
+
+* [Task 1: Create Read Text from Image Azure Function)](#Task-1:-Create-Read-Text-from-Image-Azure-Function)
+* [Task 2: Specify Configuration settings for Read Text from Image Azure Function](#Task-2:-Specify-Configuration-settings-for-Read-Text-from-Image-Azure-Function)
+* [Task 3: Deploy Azure Function Code](#Task-3:-Deploy-Azure-Function-Code)
+* [Task 4: Create Logic App](#Task-4:-Create-Logic-App)
+
+### Task 1: Create Read Text from Image Azure Function
 
 1. Expand the menu on the Azure Portal by clicking menu icon on top left corner and then click *+ Create a resource*
 
@@ -95,6 +108,9 @@ Note - Don't forget to click the *Save* button after adding all the settings.
 
 <img src="./images/AzureFuncDeploymentCodeRepoConfig.GIF" alt="Azure Func Deployment - Build Provider" width="50%" height="50%"/>
 
-5. Click *Continue* and then *Finish* button, this starts the deployment of the code to your Azure Function.
+5. Click *Continue* and then *Finish* button, this starts the deployment of the code to your Azure Function. Wait for the deployment to succeed and the proceed to the next task, screenshot below shows a Successful deployment
+
+<img src="./images/AzureFuncDeploymentSuccess.GIF" alt="Azure Func Deployment - Success" width="50%" height="50%"/>
+
 
 [Back to Chapter 2](../chapter2/Readme.md)
