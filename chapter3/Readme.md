@@ -120,7 +120,9 @@ Note - Don't forget to click the *Save* button after adding all the settings.
 
 In this task you will uplod a test image to Storage Account and then invoke Azure Function to read text from the image. 
 
-1. Download the test image file <a id='testimage1url' href="../test-images/lipitor.jpg" download target="_blank">Click here to download test image file</a>
+1. Download the test image file to your local computer, right-click the image below and select *Save Image as...* option.
+
+<img src="../test-images/lipitor.jpg" alt="Test Prescription Image" width="50%" height="50%"/>
 
 2. Browse to the detail page for Storage Account created in Chapter 2, click Containers and the click *+ Container* 
 
