@@ -33,6 +33,7 @@ No AI capabilities will be added in this chapter, the work on this chapter lays 
 * [Task 2: Create Storage Account](#Task-2:-Create-Storage-Account)
 * [Task 3: Create Cosmos DB Account](#Task-3:-Create-Cosmos-DB-Account)
 * [Task 4: Create Logic App](#Task-4:-Create-Logic-App)
+* [Task 5: Create Cognitive Service](#Task-5:-Create-Cognitive-Service)
 
 ***
 
@@ -133,6 +134,9 @@ An empty logic app will be created in this chapter so its pretty much a placehol
 <img src="./images/ResourceCreationNotification.GIF" alt="Resource Creation Notification" width="50%" height="50%"/>
 
 ***
+### Task 5: Create Cognitive Service
+
+
 
 ## Review
 In this chapter we created resources which will be used in building the solution in the subsequent chapters, at this stage the resources are empty and don't have any content. You created the following resources: 
