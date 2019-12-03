@@ -19,6 +19,7 @@ No AI capabilities will be added in this chapter, the work on this chapter lays 
 * Azure Storage - <https://docs.microsoft.com/en-us/azure/storage/>
 * CosmosDb - <https://docs.microsoft.com/en-us/azure/cosmos-db/>
 * Logic App Service - <https://docs.microsoft.com/en-us/azure/logic-apps/>
+* Cognitive Service - <https://azure.microsoft.com/en-us/services/cognitive-services/>
 
 ## Exercise
 
