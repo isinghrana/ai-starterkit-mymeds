@@ -20,10 +20,10 @@ Create Azure Function for reading text from prescription image (C# code is provi
 
 ### Contents
 
-* [Task 1: Create Read Text from Image Azure Function](#task-1-create-tead-text-from-image-azure-function)
+* [Task 1: Create Read Text from Image Azure Function](#task-1-create-read-text-from-image-azure-function)
 * [Task 2: Specify Configuration settings for Read Text from Image Azure Function](#task-2-specify-configuration-settings-for-read-text-from-image-azure-function)
-* [Task 3: Deploy Azure Function Code](###Task-3:-Deploy-Azure-Function-Code)
-* [Task 4: Test Azure Function](###Task-4:-Test-Azure-Function)
+* [Task 3: Deploy Azure Function Code](#task-3-deploy-azure-function-code)
+* [Task 4: Test Azure Function](#task-4-test-azure-function)
 
 ***
 
@@ -157,5 +157,7 @@ In this task you will uplod a test image to Storage Account and then invoke Azur
 ***
 
 **Congratulations! At this point you have implemented as Azure Function which uses AI Capabilities of Azure Computer Vision Cognitive Service to read text from an image.**
+
+***
 
 [Back to Chapter 2](../chapter2/Readme.md)
