@@ -118,7 +118,7 @@ Note - Don't forget to click the *Save* button after adding all the settings.
 
 ### Task 4: Test Azure Function
 
-In this task you will uplod a test image to Storage Account and then invoke Azure Function to read text from the image. 
+In this task you will upload a test image to Storage Account and then invoke Azure Function to read text from the image. 
 
 1. Download the test image file to your local computer, right-click the image below and select *Save Image as...* option.
 
@@ -160,4 +160,4 @@ In this task you will uplod a test image to Storage Account and then invoke Azur
 
 ***
 
-[Back to Chapter 2](../chapter2/Readme.md)
+[Previous Chapter](../chapter2/Readme.md) | [Next Chapter](../chapter4/Readme.md)
