@@ -1,17 +1,20 @@
-# Chapter 4 - Create Logic App to process the image uploaded to Azure Storage Account
+# Chapter 4 - Create Logic App to invoke ReadImageText Azure Function on image uploaded to Azure Storage Account
 
 ## Objective
-Create Logic App to run when a new image is uploaded to Azure Storage Account. The Logic App invokes the Read Text from Image Azure Function (created in previous chapter) to read the text from image and save a record to CosmosDb Database. 
+Create Logic App to run when a new image is uploaded to Azure Storage Account. The Logic App invokes the Read Text from Image Azure Function (created in previous chapter) to read the text from image. 
 
-> Note: In the subsequent chapters this Logic App will be enhanced with steps where AI is used to identify the Medicine informaton from the image text.
+> Note: In the subsequent chapters this Logic App will be further enhanced with steps where AI is used to identify the Medicine informaton from the image text.
 
 ***
 
 ### Contents
 
+* [Task 1: Add Trigger to run the Logic App on image upload to Azure Storage](#task-1-add-trigger-to-run-the-logic-app-on-image-upload-to-azure-storage)
+* [Task 2: Invoke Read Text from Image Azure Function](#Task-2-invoke-read-text-from-image-azure-function)
+
 ***
 
-### Task 1 - Add Trigger to run the Logic App on image upload to Azure Storage 
+### Task 1: Add Trigger to run the Logic App on image upload to Azure Storage 
 
 In this task you will add a trigger to run Logic App when an image is uploaded to Azure Storage account using Event Grid Trigger. An empty Logic App was created in Chapter 2, you will be adding to that empty Logic App. You will need to know the Storage Account Name and Container where you will be uploading the test images, this can be the same Container created in Chapter 3 Task 4 for testing Read Text from Image Azure Function.
 
@@ -43,7 +46,9 @@ In this task you will add a trigger to run Logic App when an image is uploaded t
 
 At this point you have Logic App configured to run when an image is uploaded to storage account.
 
-### Task 2 - Invoke Read Text from Image Azure Function 
+***
+
+### Task 2: Invoke Read Text from Image Azure Function 
 
 In this task you will add action step to the Logic App to invoke Azure Function to read text from uploaded image.
 
@@ -66,6 +71,13 @@ In this task you will add action step to the Logic App to invoke Azure Function 
 ```
 
 <img src="./images/LogicAppAzureFuncConfig.GIF" alt="Create Azure Function - Review Details" width="80%" height="50%"/>
+
+***
+
+
+### Task 3: Test Logic App
+
+
 
 
 
