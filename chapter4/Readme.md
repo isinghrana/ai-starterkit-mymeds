@@ -10,7 +10,8 @@ Create Logic App to run when a new image is uploaded to Azure Storage Account. T
 ### Contents
 
 * [Task 1: Add Trigger to run the Logic App on image upload to Azure Storage](#task-1-add-trigger-to-run-the-logic-app-on-image-upload-to-azure-storage)
-* [Task 2: Invoke Read Text from Image Azure Function](#Task-2-invoke-read-text-from-image-azure-function)
+* [Task 2: Invoke Read Text from Image Azure Function](#task-2-invoke-read-text-from-image-azure-function)
+* [Task 3: Test Logic App](#task-3-test-logic-app)
 
 ***
 
@@ -42,7 +43,7 @@ In this task you will add a trigger to run Logic App when an image is uploaded t
 
     c. Select *Microsoft.Storage.BlobCreated* Event for Event Type
 
-<img src="./images/LogicAppEventGridTriggerSetup3.GIF" alt="Create Azure Function - Review Details" width="80%" height="50%"/>
+<img src="./images/LogicAppEventGridTriggerSetup3.GIF" alt="Create Azure Function - Review Details" width="50%" height="50%"/>
 
 At this point you have Logic App configured to run when an image is uploaded to storage account.
 
@@ -56,11 +57,11 @@ In this task you will add action step to the Logic App to invoke Azure Function 
 
 2. Type *function* in the Choose an action box and select *Azure Function* action
 
-<img src="./images/LogicAppSelectAzureFunctionAction.GIF" alt="Create Azure Function - Review Details" width="80%" height="50%"/>
+<img src="./images/LogicAppSelectAzureFunctionAction.GIF" alt="Create Azure Function - Review Details" width="50%" height="50%"/>
 
 3. List of Azure Function Apps from your Azure Subscription is displayed, select the Function App created in Chapter 3. A list of functions in the Function App will be displayed, *ReadImageText* should be the only function and needs to be selected.
 
-<img src="./images/LogicAppSelectAzureFunctionAction2.GIF" alt="Create Azure Function - Review Details" width="80%" height="50%"/>
+<img src="./images/LogicAppSelectAzureFunctionAction2.GIF" alt="Create Azure Function - Review Details" width="50%" height="50%"/>
 
 4. For ReadImageText step, add the following text in the *Request Body* text box, this causes the URL of the test image uploaded to Azure Storage to be passed to the Azure Function at runtime.
 
@@ -70,14 +71,29 @@ In this task you will add action step to the Logic App to invoke Azure Function 
 }
 ```
 
-<img src="./images/LogicAppAzureFuncConfig.GIF" alt="Create Azure Function - Review Details" width="80%" height="50%"/>
+<img src="./images/LogicAppAzureFuncConfig.GIF" alt="Create Azure Function - Review Details" width="50%" height="50%"/>
 
 ***
 
-
 ### Task 3: Test Logic App
 
+In this task you will be upload another test image to Azure Storage Account and verify Logic App executes successfully and invokes ReadImageText Azure Function to get the text for the image.
 
+1. Download the following image by right-clicking and select *Save Image as...* option and follow the instructions similar to Chapter 3 Task 4 to upload the image to Azure Storage Acccount.
+
+<img src="../test-images/lisinopril.jpg" alt="Create Azure Function - Review Details" width="50%" height="50%"/>
+
+2. Browse to the Logic App detail screen and you will see Run History for the executions. Click the top row which is most recent execution of Logic App and show *Succeeded* as the status. 
+
+<img src="./images/LogicAppRunHistory.GIF" alt="Create Azure Function - Review Details" width="50%" height="50%"/>
+
+3. Logic App Run detial will be displayed and should show the text from image as the output of the second step.
+
+<img src="./images/LogicAppDetail.GIF" alt="Create Azure Function - Review Details" width="50%" height="50%"/>
+
+***
+
+[Previous Chapter](../chapter3/Readme.md) | Next Chapter (coming soon)
 
 
 
