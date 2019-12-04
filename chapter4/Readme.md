@@ -1,4 +1,4 @@
-# Chapter 4 - Create Logic App to invoke ReadImageText Azure Function on image uploaded to Azure Storage Account
+# Chapter 4 - Implement Logic App to read text from image
 
 ## Objective
 Create Logic App to run when a new image is uploaded to Azure Storage Account. The Logic App invokes the Read Text from Image Azure Function (created in previous chapter) to read the text from image. 
