@@ -160,4 +160,4 @@ In this task you will uplod a test image to Storage Account and then invoke Azur
 
 ***
 
-[Back to Chapter 2](../chapter2/Readme.md)
+[Previous Chapter](../chapter2/Readme.md) | [Next Chapter](../chapter4/Readme.md)
