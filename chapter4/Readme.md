@@ -10,7 +10,7 @@ Create Logic App to run when a new image is uploaded to Azure Storage Account. T
 ### Contents
 
 * [Task 1: Add Trigger to run the Logic App on image upload to Azure Storage](#task-1-add-trigger-to-run-the-logic-app-on-image-upload-to-azure-storage)
-* [Task 2: Invoke Read Text from Image Azure Function](#task-2-invoke-read-text-from-image-azure-function)
+* [Task 2: Add Step to Invoke Read Text from Image Azure Function](#task-2-add-step-to-invoke-read-text-from-image-azure-function)
 * [Task 3: Test Logic App](#task-3-test-logic-app)
 
 ***
@@ -49,7 +49,7 @@ At this point you have Logic App configured to run when an image is uploaded to 
 
 ***
 
-### Task 2: Invoke Read Text from Image Azure Function 
+### Task 2: Add Step to Invoke Read Text from Image Azure Function 
 
 In this task you will add action step to the Logic App to invoke Azure Function to read text from uploaded image.
 
