@@ -29,17 +29,17 @@ The business objective here is to read text from a prescription image. We'll use
 
 ### Task 1: Create Read Text from Image Azure Function
 
-1. Expand the menu on the Azure Portal by clicking menu icon on top left corner and then click **+ Create a resource**
+1. Expand the menu on the Azure Portal by clicking the menu icon on top left corner and then click *+ Create a resource*
 
-2. The Azure Portal should show New resouce creation screen
+2. The Azure Portal should show the New resouce creation screen
 	
 	a. Start typing *Function*, as you are typing *Function App* selection will be displayed below the textbox
 
 	b. Select *Function App* and Function App creation screen is displayed
 
-	c. Click **Create** and Function App Details screen is displayed
+	c. Click *Create* and Function App Details screen is displayed
 
-	d. Enter the details - select the Resource Group created in Chapter 2. Enter a name for your function - which needs to be globally unique (add numbers like 123, 456, etc. whatever to make it unique). Select a Region. (It's not necessary, but you should probably make it the same as the resource group's region.) Select **.Net Core** for Runtime stack. Leave the rest of the options with their default settings and click the **Review + create** button on the bottom left.
+	d. Enter the details - select the Resource Group created in Chapter 2. Enter a name for your function - which needs to be globally unique (add numbers like 123, 456, etc. whatever to make it unique). Select a Region. (It's not necessary, but you should probably make it the same as the resource group's region.) Select *.Net Core* for Runtime stack. Leave the rest of the options with their default settings and click the *Review + create* button on the bottom left.
 
 <img src="./images/CreateAzureFuncDetails.GIF" alt="Create Azure Function Details" width="50%" height="50%"/>
 
@@ -47,9 +47,9 @@ The business objective here is to read text from a prescription image. We'll use
 
 <img src="./images/CreateAzureFuncReviewDetails.GIF" alt="Create Azure Function - Review Details" width="50%" height="50%"/>
 
-4. Click the **Create** button
+4. Click the *Create* button.
 
-5. Wait for the resource creation to complete and then proceed to the next Task
+5. Wait for the resource creation to complete and then proceed to the next Task.
 
 ***
 
@@ -69,7 +69,7 @@ The business objective here is to read text from a prescription image. We'll use
 
 <img src="./images/AzureFuncAddAppSetting2.GIF" alt="Azure Function - Add App Setting" width="50%" height="50%"/>
 
-Its important to use the exact name of the setting as specified below so copy/paste to avoid typing mistakes.
+It's critical you use the exact name of the setting as specified below so copy/paste to avoid typing mistakes.
 
     a. Specify name of the setting *StorageConnectionString* and set the value to connection string of the Storage Account found on the *Access Keys* page of the Storage Account.
 
