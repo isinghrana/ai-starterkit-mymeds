@@ -1,15 +1,15 @@
-# Chapter 3 - Create Azure Function for Reading Text from Prescription Image
+# Chapter 3 - Create an Azure Function for Reading Text from a Prescription Image
 
 ## Objective
-Create Azure Function for reading text from prescription image (C# code is provided in the repo so no coding experience is required). The code in Azure Function uses Azure AI Platform capabilies available as part of Compute Vision Cognitive Service. At the end of chapter you will be able use the AI Capabilities to read text from and image.
+The business objective here is to read text from a prescription image. We'll use an Azure Function to do this. (It's a simple function, but the C# code is provided for you so no coding experience is required.) The code in Azure Function uses Azure AI Platform capabilies available as part of our Compute Vision Cognitive Service. At the end of chapter you will be able use the AI Capabilities to read text from and image.
 
 ## Azure Concepts/Terms 
 
-* Azure Functions - Azure Functions is a solution for easily running small pieces of code, or "functions," in the cloud. You can write just the code you need for the problem at hand, without worrying about a whole application or the infrastructure to run it.
+* Azure Functions - Azure Functions is a solution for easily running small pieces of code, or "functions," in the cloud. It's server-less so you can write just the code you need for the problem at hand without worrying about a whole application or the infrastructure to run it.
 
 * Azure Cognitive Services -  are a set of services which bring AI within reach of every developer—without requiring machine-learning expertise. All it takes is an API call to embed the ability to see, hear, speak, search, understand, and accelerate decision-making into your apps.
 
-* Azure Computer Vision Cognitive Service - is one of the Cognitive Services providing AI capability of reading  text from an image.
+* Azure Computer Vision Cognitive Service - Computer Vision is one of the Cognitive Services. It uses machine learning to read text from an image.
 
 ## Learn More
 * Azure Functions - <https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview>
