@@ -85,11 +85,11 @@ In this task you will be upload another test image to Azure Storage Account and 
 
 2. Browse to the Logic App detail screen and you will see Run History for the executions. Click the top row which is most recent execution of Logic App and show *Succeeded* as the status. 
 
-<img src="./images/LogicAppRunHistory.GIF" alt="Create Azure Function - Review Details" width="50%" height="50%"/>
+<img src="./images/LogicAppRunHistory.GIF" alt="Create Azure Function - Review Details" width="70%" height="80%"/>
 
 3. Logic App Run detial will be displayed and should show the text from image as the output of the second step.
 
-<img src="./images/LogicAppDetail.GIF" alt="Create Azure Function - Review Details" width="50%" height="50%"/>
+<img src="./images/LogicAppRunDetail.GIF" alt="Create Azure Function - Review Details" width="50%" height="50%"/>
 
 ***
 
