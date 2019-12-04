@@ -39,11 +39,11 @@ The business objective here is to read text from a prescription image. We'll use
 
 	c. Click *Create* and Function App Details screen is displayed
 
-	d. Enter the details - select the Resource Group created in Chapter 2. Enter a name for your function - which needs to be globally unique (add numbers like 123, 456, etc. whatever to make it unique). Select a Region. (It's not necessary, but you should probably make it the same as the resource group's region.) Select *.Net Core* for Runtime stack. Leave the rest of the options with their default settings and click the *Review + create* button on the bottom left.
+	d. Enter the details - select the Resource Group created in Chapter 2. Enter a name for your function - which needs to be globally unique. (Add numbers like 123, 456, or whatever to make it unique.) Select a Region. (It's not necessary, but you should probably make it the same as your Resource Group's region.) Select *.Net Core* for Runtime stack. Leave the rest of the options with their default settings and click the *Review + create* button on the bottom left.
 
 <img src="./images/CreateAzureFuncDetails.GIF" alt="Create Azure Function Details" width="50%" height="50%"/>
 
-3. Review the Azure Function details - Runtime Stack must be .NET Core, Plan Type must be Consumption, Operating System and Application Insights must be Enabled (if any of the settings are different you can go back to the Preview screen and make appropriate selections).
+3. Review the Azure Function details: Runtime Stack must be .NET Core, Plan Type must be Consumption, Operating System and Application Insights must be Enabled (if any of the settings are different you can go back to the Preview screen and make appropriate selections).
 
 <img src="./images/CreateAzureFuncReviewDetails.GIF" alt="Create Azure Function - Review Details" width="50%" height="50%"/>
 
@@ -117,7 +117,7 @@ Note - Don't forget to click the *Save* button after adding all the settings.
 
 ### Task 4: Test Azure Function
 
-In this task you will upload a test image to Storage Account and then invoke Azure Function to read text from the image. 
+In this task, you will upload a test image to Storage Account and then invoke Azure Function to read text from the image. 
 
 1. Download the test image file to your local computer, right-click the image below and select *Save Image as...* option.
 
