@@ -21,19 +21,17 @@ No AI capabilities will be added in this chapter, the work on this chapter lays 
 * Logic App Service - <https://docs.microsoft.com/en-us/azure/logic-apps/>
 * Cognitive Service - <https://azure.microsoft.com/en-us/services/cognitive-services/>
 
-## Exercise
-
-> TODO: This section is not complete ye
-
 ***
 
 ### Contents
 
-* [Task 1: Create Resource Group](#Task-1:-Create-Resource-Group)
-* [Task 2: Create Storage Account](#Task-2:-Create-Storage-Account)
-* [Task 3: Create Cosmos DB Account](#Task-3:-Create-Cosmos-DB-Account)
-* [Task 4: Create Logic App](#Task-4:-Create-Logic-App)
-* [Task 5: Create Cognitive Service](#Task-5:-Create-Cognitive-Service)
+* [Task 1: Create Resource Group](#task-1-create-resource-group)
+* [Task 2: Create Storage Account](#task-2-create-storage-account)
+* [Task 3: Create Cosmos DB Account](#task-3-create-cosmos-db-account)
+* [Task 4: Create Logic App](#task-4-create-logic-app)
+* [Task 5: Create Cognitive Service](#task5-create-cognitive-service)
+
+> TODO: Add Task for creation of Cognitive Service (generic one which can be used for all Cognitive Services)
 
 ***
 
@@ -159,5 +157,9 @@ In this chapter we created resources which will be used in building the solution
 * Cosmos DB Account
 * Logic App
 * Cognitive Services
+
+> TODO: Document the steps to open Resource Group details page on Azure Portal to review resoruces in a Resource Group
+
+***
 
 [Previous Chapter](../chapter1/Readme.md) | [Next Chapter](../chapter3/Readme.md)
