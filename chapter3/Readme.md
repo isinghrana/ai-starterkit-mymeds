@@ -12,7 +12,7 @@ The business objective here is to read text from a prescription image. We'll use
 
 ## Learn More
 * Azure Functions - <https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview>
-* Azure Cogntiive Services - <https://docs.microsoft.com/en-us/azure/cognitive-services/>
+* Azure Cognitive Services - <https://docs.microsoft.com/en-us/azure/cognitive-services/>
 * Azure Computer Vision Cognitive Services - <https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/>
 
 ***
@@ -28,7 +28,7 @@ The business objective here is to read text from a prescription image. We'll use
 
 ### Task 1: Create Read Text from Image Azure Function
 
-1. Expand the menu on the Azure Portal by clicking the menu icon on top left corner and then click *+ Create a resource*
+1. Expand the menu on the Azure Portal by clicking the menu icon in the top left corner and then click *+ Create a resource*
 
 2. The Azure Portal should show the New resource creation screen
 	
