@@ -136,15 +136,20 @@ An empty logic app will be created in this chapter so its pretty much a placehol
 ***
 ### Task 5: Create Cognitive Service
 1. Expand the menu on the Azure Portal by clicking menu icon on top left corner and then click + Create a resource
+
 2. At this point Azure Portal should show New resource creation screen
+
 	a.  Start typing Cognitive Services, as you are typing Cognitive Services selection will be displayed below the textbox.
-	b. Select Cognitive Services and Create All Cognitive Services screen is displayed.
-	c. Enter the Cognitive Services detail - specify name of the service which needs to be globally unique, select location same as the resource group from Task 1, select pricing tier, select the newly created Resource Group and click on Create button on bottom left.    
 	
+	b. Select Cognitive Services and Create All Cognitive Services screen is displayed.
+	
+	c. Enter the Cognitive Services detail - specify name of the service which needs to be globally unique, select location same as 	   the resource group from Task 1, select pricing tier, select the newly created Resource Group and click on Create button on 	            bottom left.    
+	
+	<img src="./images/CognitiveServiceDetail.png" alt="Cognitive Service Detail" width="50%" height="50%"/>
 	
 	d. Wait for the resource creation to complete, notification section on Azure Portal shows the resource creation progress.
 	
-
+	<img src="./images/CognitiveServiceNotification.png" alt="Cognitive Service Created Notification" width="50%" height="50%"/>
 
 
 ## Review
@@ -153,5 +158,6 @@ In this chapter we created resources which will be used in building the solution
 * Storage Account 
 * Cosmos DB Account
 * Logic App
+* Cognitive Services
 
 [Previous Chapter](../chapter1/Readme.md) | [Next Chapter](../chapter3/Readme.md)
