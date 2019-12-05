@@ -27,6 +27,7 @@ The business objective here is to read text from a prescription image. We'll use
 ***
 
 ### Task 1: Create Read Text from Image Azure Function
+
 1. Expand the menu on the Azure Portal by clicking the menu icon on top left corner and then click *+ Create a resource*
 
 2. The Azure Portal should show the New resouce creation screen
@@ -95,11 +96,11 @@ Note - Don't forget to click the *Save* button after adding all the settings.
 
 <img src="./images/AzureFuncDeployment.GIF" alt="Azure Func Deployment" width="50%" height="50%"/>
 
-2. Code will be deployed from Public Github Repo so select *External* under *Manual Deployment (puhs/sync) section and then click *Continue* button at the bottom.
+2. Code will be deployed from Public Github Repo so select *External* under *Manual Deployment (push/sync) section and then click *Continue* button at the bottom.
 
 <img src="./images/AzureFuncDeploymentSetupCodeSource.GIF" alt="Azure Func Deployment - Code Source" width="50%" height="50%"/>
 
-3. Select *App Service build service* for Build Provider (this uses Kudu engine already included in the Azure Function infrastructure as the build service) and then click *Continue* button at the bottom.
+3. Select *App Service build service* for Build Provider and then click *Continue* button at the bottom.
 
 <img src="./images/AzureFuncDeploymentBuildProvider.GIF" alt="Azure Func Deployment - Build Provider" width="50%" height="50%"/>
 
