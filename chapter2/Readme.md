@@ -9,7 +9,6 @@ No AI capabilities will be added in this chapter, the work on this chapter lays 
 
 * Resource Group - is a container that holds related resources for an Azure solution. The resource group includes those resources that you want to manage as a group. As part of this starter kit you will be creating a single resource group for all the resources.
 * Azure Storage - is Microsoft's cloud storage solution for modern data storage scenarios, a storage account offers multiple ways to storage files and we will be uses Azure Blobs for the purpose of our purpose. 
-* CosmosDb  - is a fully managed NoSQL database service which allows saving documents without the need to design table in rigid formats and provides superior querying capabilities where saved information can be looked up easily in a performant manner.
 * Logic App Service - is a cloud service that helps you automate tasks and workflows, for our purpose we will be using the Logic App to develop the background process which runs once the image is uploaded to Azure Storage. The solutions are developed using drag drop without coding effort,
 * Cognitive Service - Cognitive Services bring AI within reach of every developer—without requiring machine-learning expertise. All it takes is an API call to embed the ability to see, hear, speak, search, understand, and accelerate decision-making into your apps.
 
@@ -17,7 +16,6 @@ No AI capabilities will be added in this chapter, the work on this chapter lays 
 ## Learn More
 * Resource Group - <https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview#resource-groups>
 * Azure Storage - <https://docs.microsoft.com/en-us/azure/storage/>
-* CosmosDb - <https://docs.microsoft.com/en-us/azure/cosmos-db/>
 * Logic App Service - <https://docs.microsoft.com/en-us/azure/logic-apps/>
 * Cognitive Service - <https://azure.microsoft.com/en-us/services/cognitive-services/>
 
@@ -27,11 +25,8 @@ No AI capabilities will be added in this chapter, the work on this chapter lays 
 
 * [Task 1: Create Resource Group](#task-1-create-resource-group)
 * [Task 2: Create Storage Account](#task-2-create-storage-account)
-* [Task 3: Create Cosmos DB Account](#task-3-create-cosmos-db-account)
-* [Task 4: Create Logic App](#task-4-create-logic-app)
-* [Task 5: Create Cognitive Service](#task-5-create-cognitive-service)
-
-> TODO: Add Task for creation of Cognitive Service (generic one which can be used for all Cognitive Services)
+* [Task 3: Create Logic App](#task-3-create-logic-app)
+* [Task 4: Create Cognitive Service](#task-4-create-cognitive-service)
 
 ***
 
@@ -87,30 +82,7 @@ All Resources for the solution will be created in a Resource Group
 
 ***
 
-### Task 3: Create Cosmos DB Account
-An empty account will be created in this chapter, databsase and collection will be added in subsequent chapters
-
-1. Expand the menu on the Azure Portal by clicking menu icon on top left corner and then click *+ Create a resource*
-
-2. At this point Azure Portal should show New resouce creation screen
-	
-	a. Start typing *cosmos*, as you are typing Azure Cosmos DB selection will be displayed below the textbox
-
-	b. Select Azure Cosmos DB and Cosmos DB creation screen is displayed
-
-	c. Click *Create* button and Cosmos DB Detail screen is displayed
-
-	d. Enter the Cosmos DB account details - select the resource group created in Task 1 above, specify unique account name, for API select *Core(SQL), select Location the same as the Task 1, leave remaining selection as default and click *Review + create* button on bottom left
-
-<img src="./images/CosmosDBDetail.GIF" alt="Cosmos DB Detail" width="50%" height="50%"/>
-
-3. Review the Cosmos DB details and click *Create* button
-
-4. Wait for the resource creation to complete and then proceed to the next Task
-
-***
-
-### Task 4: Create Logic App
+### Task 3: Create Logic App
 An empty logic app will be created in this chapter so its pretty much a placeholder, triggers and actions will be added in subsequent chapters
 
 1. Expand the menu on the Azure Portal by clicking menu icon on top left corner and then click *+ Create a resource*
@@ -132,16 +104,16 @@ An empty logic app will be created in this chapter so its pretty much a placehol
 <img src="./images/ResourceCreationNotification.GIF" alt="Resource Creation Notification" width="50%" height="50%"/>
 
 ***
-### Task 5: Create Cognitive Service
+### Task 4: Create Cognitive Service
 1. Expand the menu on the Azure Portal by clicking menu icon on top left corner and then click + Create a resource
 
 2. At this point Azure Portal should show New resource creation screen
 
-	a.  Start typing Cognitive Services, as you are typing Cognitive Services selection will be displayed below the textbox.
+	a. Start typing Cognitive Services, as you are typing Cognitive Services selection will be displayed below the textbox.
 	
 	b. Select Cognitive Services and Create All Cognitive Services screen is displayed.
 	
-	c. Enter the Cognitive Services detail - specify name of the service which needs to be globally unique, select location same as 	    the resource group from Task 1, select pricing tier, select the newly created Resource Group and click on Create button on 	             bottom left.    
+	c. Enter the Cognitive Services detail - specify name of the service which needs to be globally unique, select location same as the resource group from Task 1, select pricing tier, select the newly created Resource Group and click *Create* button on bottom left.    
 	
 	<img src="./images/CognitiveServiceDetail.png" alt="Cognitive Service Detail" width="50%" height="50%"/>
 	
@@ -154,7 +126,6 @@ An empty logic app will be created in this chapter so its pretty much a placehol
 In this chapter we created resources which will be used in building the solution in the subsequent chapters, at this stage the resources are empty and don't have any content. You created the following resources: 
 * Resource Group
 * Storage Account 
-* Cosmos DB Account
 * Logic App
 * Cognitive Services
 
