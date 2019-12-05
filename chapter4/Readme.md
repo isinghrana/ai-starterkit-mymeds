@@ -12,15 +12,15 @@ The business objective is to take action when an prescription label image is upl
 
 ### Contents
 
-* [Task 1: Add Trigger to run the Logic App on image upload to Azure Storage](#task-1-add-trigger-to-run-the-logic-app-on-image-upload-to-azure-storage)
+* [Task 1: Add a Trigger to run the Logic App on image upload to Azure Storage](#task-1-add-trigger-to-run-the-logic-app-on-image-upload-to-azure-storage)
 * [Task 2: Add Step to Invoke Read Text from Image Azure Function](#task-2-add-step-to-invoke-read-text-from-image-azure-function)
 * [Task 3: Test Logic App](#task-3-test-logic-app)
 
 ***
 
-### Task 1: Add Trigger to run the Logic App on image upload to Azure Storage 
+### Task 1: Add a Trigger to run the Logic App on image upload to Azure Storage 
 
-In this task, you will add a trigger to run your Logic App when an image is uploaded to your Azure Storage account using Event Grid Trigger. An empty Logic App was created in Chapter 2 so you will be adding steps to that empty Logic App. You will need to know the Storage Account Name and Container where you will be uploading the test images. We recommend you use the same Storage Container created in Chapter 3 Task 4 for testing Read Text from Image Azure Function.
+In this task, you will add a trigger to run your Logic App when an image is uploaded to your Azure Storage account using Event Grid Trigger. An empty Logic App was created in Chapter 2 so you will be adding steps to it now. You will need to know the Storage Account Name and Container where you will be uploading the test images. We recommend you use the same Storage Container created in Chapter 3 Task 4 for testing Read Text from Image Azure Function.
 
 1. Browse to your Logic App's detail page on the Azure Portal. (One way to find your Logic App is to browse to your Resource Group detail screen. Instructions for doing so are documented in Chapter 2).
 
