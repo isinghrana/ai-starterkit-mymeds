@@ -29,7 +29,7 @@ No AI capabilities will be added in this chapter, the work on this chapter lays 
 * [Task 2: Create Storage Account](#task-2-create-storage-account)
 * [Task 3: Create Cosmos DB Account](#task-3-create-cosmos-db-account)
 * [Task 4: Create Logic App](#task-4-create-logic-app)
-* [Task 5: Create Cognitive Service](#task5-create-cognitive-service)
+* [Task 5: Create Cognitive Service](#task-5-create-cognitive-service)
 
 > TODO: Add Task for creation of Cognitive Service (generic one which can be used for all Cognitive Services)
 
