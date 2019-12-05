@@ -30,13 +30,13 @@ The business objective here is to read text from a prescription image. We'll use
 
 1. Expand the menu on the Azure Portal by clicking the menu icon on top left corner and then click *+ Create a resource*
 
-2. The Azure Portal should show the New resouce creation screen
+2. The Azure Portal should show the New resource creation screen
 	
-	a. Start typing *Function*, as you are typing *Function App* selection will be displayed below the textbox
+	a. Start typing *Function*. As you are typing, *Function App* selection will be displayed below the textbox.
 
-	b. Select *Function App* and Function App creation screen is displayed
+	b. Select *Function App* and Function App creation screen is displayed.
 
-	c. Click *Create* and Function App Details screen is displayed
+	c. Click *Create* and Function App Details screen is displayed.
 
 	d. Enter the details - select the Resource Group created in Chapter 2. Enter a name for your function - which needs to be globally unique. (Add numbers like 123, 456, or whatever to make it unique.) Select a Region. (It's not necessary, but you should probably make it the same as your Resource Group's region.) Select *.Net Core* for Runtime stack. Leave the rest of the options with their default settings and click the *Review + create* button on the bottom left.
 
@@ -54,7 +54,7 @@ The business objective here is to read text from a prescription image. We'll use
 
 ### Task 2: Specify Configuration settings for Read Text from Image Azure Function
 
-1. Browse to the Azure Function detail page on the Azure Portal by clicking *Go to resource* button from the deployment screen or from the Resource Group detail screen (see Chapter 2 for steps to browse to the Resource Group Detail screen)
+1. Browse to the Azure Function detail page on the Azure Portal by clicking *Go to resource* button from the deployment screen or from the Resource Group detail screen. (See Chapter 2 for steps to browse to the Resource Group Detail screen.)
 
 <img src="./images/AzureFuncCreateSuccess.GIF" alt="Create Azure Function - Review Details" width="50%" height="50%"/>
 
@@ -118,13 +118,13 @@ Note - Don't forget to click the *Save* button after adding all the settings.
 
 In this task, you will upload a test image to Storage Account and then invoke Azure Function to read text from the image. 
 
-1. Download the test image file to your local computer, right-click the image below and select *Save Image as...* option.
+1. Download the test image file to your local computer. Right-click the image below and select *Save Image as...* option.
 
 <img src="../test-images/lipitor.jpg" alt="Test Prescription Image" width="50%" height="50%"/>
 
 2. Browse to the detail page for Storage Account created in Chapter 2, click Containers and the click *+ Container* 
 
-3. Container can be considered a top-level folder in a Storage Account, give an appropriate name to the container. Example - *test-images*. 
+3. In this context, a Container can be considered a top-level folder in a Storage Account, give an appropriate name to the container. Example - *test-images*.
 
 <img src="./images/StorageAccountCreateContainer.GIF" alt="Storage Account - Create Container" width="50%" height="50%"/>
 
