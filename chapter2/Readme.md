@@ -143,7 +143,7 @@ An empty logic app will be created in this chapter so its pretty much a placehol
 	
 	b. Select Cognitive Services and Create All Cognitive Services screen is displayed.
 	
-	c. Enter the Cognitive Services detail - specify name of the service which needs to be globally unique, select location same as 	   the resource group from Task 1, select pricing tier, select the newly created Resource Group and click on Create button on 	            bottom left.    
+	c. Enter the Cognitive Services detail - specify name of the service which needs to be globally unique, select location same as 	    the resource group from Task 1, select pricing tier, select the newly created Resource Group and click on Create button on 	             bottom left.    
 	
 	<img src="./images/CognitiveServiceDetail.png" alt="Cognitive Service Detail" width="50%" height="50%"/>
 	
