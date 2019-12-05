@@ -38,7 +38,7 @@ The business objective here is to read text from a prescription image. We'll use
 
 	c. Click *Create* and Function App Details screen is displayed.
 
-	d. Enter the details - select the Resource Group created in Chapter 2. Enter a name for your function - which needs to be globally unique. (Add numbers like 123, 456, or whatever to make it unique.) Select a Region. (It's not necessary, but you should probably make it the same as your Resource Group's region.) Select *.Net Core* for Runtime stack. Leave the rest of the options with their default settings and click the *Review + create* button on the bottom left.
+	d. Enter the details - select the Resource Group created in Chapter 2. Enter a name for your function - which needs to be globally unique. (Add numbers like 123, your dog's name, or whatever to make it unique.) Select a Region. (It's not necessary, but you should probably make it the same as your Resource Group's region.) Select *.Net Core* for Runtime stack. Leave the rest of the options with their default settings and click the *Review + create* button on the bottom left.
 
 <img src="./images/CreateAzureFuncDetails.GIF" alt="Create Azure Function Details" width="50%" height="50%"/>
 
