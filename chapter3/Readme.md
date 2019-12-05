@@ -1,10 +1,9 @@
 # Chapter 3 - Create an Azure Function for Reading Text from a Prescription Image
 
 ## Objective
-The business objective here is to read text from a prescription image. We'll use an Azure Function to do this. (It's a simple function, but the C# code is provided for you so no coding experience is required.) The code in Azure Function uses Azure AI Platform capabilies available as part of our Compute Vision Cognitive Service. At the end of chapter you will be able use the AI Capabilities to read text from and image.
+The business objective here is to read text from a prescription image. We'll use an Azure Function to do this. (It's a simple function, but the C# code is provided for you so no coding experience is required.) The code in Azure Function uses Azure AI Platform capabilies available as part of our Compute Vision Cognitive Service. At the end of chapter, you will be able use the AI Capabilities to read text from and image.
 
-## Azure Concepts/Terms 
-
+## Azure Concepts/Terms
 * Azure Functions - Azure Functions is a solution for easily running small pieces of code, or "functions," in the cloud. It's server-less so you can write just the code you need for the problem at hand without worrying about a whole application or the infrastructure to run it.
 
 * Azure Cognitive Services -  are a set of services which bring AI within reach of every developer—without requiring machine-learning expertise. All it takes is an API call to embed the ability to see, hear, speak, search, understand, and accelerate decision-making into your apps.
@@ -28,7 +27,6 @@ The business objective here is to read text from a prescription image. We'll use
 ***
 
 ### Task 1: Create Read Text from Image Azure Function
-
 1. Expand the menu on the Azure Portal by clicking the menu icon on top left corner and then click *+ Create a resource*
 
 2. The Azure Portal should show the New resouce creation screen
@@ -155,7 +153,7 @@ In this task, you will upload a test image to Storage Account and then invoke Az
 
 ***
 
-**Congratulations! At this point you have implemented as Azure Function which uses AI Capabilities of Azure Computer Vision Cognitive Service to read text from an image.**
+**Congratulations! At this point you have implemented an Azure Function which uses AI Capabilities of Azure Computer Vision Cognitive Service to read text from an image.**
 
 ***
 
