@@ -3,7 +3,7 @@
 ## Objective
 The business objective is to take action when an prescription label image is uploaded. You'll create a Logic App to run when a new image is uploaded to Azure Storage Account. The Logic App invokes the Read Text from Image Azure Function (created in previous chapter) to read the text from image.
 
-> Note: In the subsequent chapters this Logic App will be further enhanced with steps where AI is used to identify the Medicine informaton from the image text.
+> Note: In the subsequent chapters, this Logic App will be further enhanced with steps where AI is used to identify the Medicine informaton from the image text.
 
 ***
 ## Azure Concepts/Terms 
@@ -20,7 +20,7 @@ The business objective is to take action when an prescription label image is upl
 
 ### Task 1: Add Trigger to run the Logic App on image upload to Azure Storage 
 
-In this task, you will add a trigger to run your Logic App when an image is uploaded to your Azure Storage account using Event Grid Trigger. An empty Logic App was created in Chapter 2, you will be adding steps to that empty Logic App. You will need to know the Storage Account Name and Container where you will be uploading the test images. We recommend you use the same Storage Container created in Chapter 3 Task 4 for testing Read Text from Image Azure Function.
+In this task, you will add a trigger to run your Logic App when an image is uploaded to your Azure Storage account using Event Grid Trigger. An empty Logic App was created in Chapter 2 so you will be adding steps to that empty Logic App. You will need to know the Storage Account Name and Container where you will be uploading the test images. We recommend you use the same Storage Container created in Chapter 3 Task 4 for testing Read Text from Image Azure Function.
 
 1. Browse to your Logic App's detail page on the Azure Portal. (One way to find your Logic App is to browse to your Resource Group detail screen. Instructions for doing so are documented in Chapter 2).
 
