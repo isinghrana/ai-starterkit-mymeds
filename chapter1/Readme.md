@@ -26,7 +26,7 @@ A variety of  Azure Cloud services will be used as the technology stack, the cos
 
 Below is high level architecture diagram of the solution you will be building in the subsequent chapters. A Logic App is used as the Workflow engine to orchestrate different steps of the process, it is triggered when a prescription image is uploaded to Azure Storage Account, it invokes an Azure Function which utilizes Compute Vision Cognitive Service (pre-built AI) to read text from the image, then another Azure Function relies on an API to parse the medicine information like name, dosage, frequency, etc. and then this information is saved to CosmosDb database. The solution will be implemented in iterative fashion where each adds a small piece of functionality. The diagram shows a Phone App to upload images to Azure Storage Account but that's the more extension case which users can implemented on thier own, images will be uploaded to Azure Storage Account using Azure Portal to keep things simple as this sufficient to communicate the idea in this Starter Kit. 
 
-<img src="./images/architecturediagram.GIF" alt="Solution Architecture" width="80%" height="80%"/>
+<img src="./images/architecturediagram.GIF" alt="Solution Architecture" width="100%" height="100%"/>
 
 ***
 
