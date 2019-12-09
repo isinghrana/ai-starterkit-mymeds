@@ -74,7 +74,7 @@ All Resources for the solution will be created in a Resource Group
 
 	d. Enter the Storage Account details - select the newly created Resource Group, specify storage account name which needs to be globally unique (add numbers like 123, 456, etc. whatever to make it unique), select location same as the resource group from Task 1, leave remaining selection as default and click *Review + create* button on bottom left
 
-<img src="./images/StorageAccountDetail.GIF" alt="Storage Account Detail" width="50%" height="50%"/>
+<img src="./images/StorageAccountDetail.GIF" alt="Storage Account Detail" width="80%" height="80%"/>
 
 3. Review the Storage Account details and click *Create* button
 
@@ -101,7 +101,7 @@ An empty logic app will be created in this chapter so its pretty much a placehol
 
 4. Wait for the resource creation to complete, notification section on Azure Portal shows the resource creation progress 
 
-<img src="./images/ResourceCreationNotification.GIF" alt="Resource Creation Notification" width="50%" height="50%"/>
+<img src="./images/ResourceCreationNotification.GIF" alt="Resource Creation Notification" width="80%" height="80%"/>
 
 ***
 ### Task 4: Create Cognitive Service
@@ -115,11 +115,11 @@ An empty logic app will be created in this chapter so its pretty much a placehol
 	
 	c. Enter the Cognitive Services detail - specify name of the service which needs to be globally unique, select location same as the resource group from Task 1, select pricing tier, select the newly created Resource Group and click *Create* button on bottom left.    
 	
-	<img src="./images/CognitiveServiceDetail.png" alt="Cognitive Service Detail" width="50%" height="50%"/>
+	<img src="./images/CognitiveServiceDetail.png" alt="Cognitive Service Detail" width="80%" height="80%"/>
 	
 	d. Wait for the resource creation to complete, notification section on Azure Portal shows the resource creation progress.
 	
-	<img src="./images/CognitiveServiceNotification.png" alt="Cognitive Service Created Notification" width="50%" height="50%"/>
+	<img src="./images/CognitiveServiceNotification.png" alt="Cognitive Service Created Notification" width="80%" height="80%"/>
 
 
 ## Review
