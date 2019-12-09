@@ -129,7 +129,19 @@ In this chapter we created resources which will be used in building the solution
 * Logic App
 * Cognitive Services
 
-> TODO: Document the steps to open Resource Group details page on Azure Portal to review resoruces in a Resource Group
+### Resource Group Detail Page
+As explained before Resource Group is a logical container for resources, it provides an easy way to organize and find resources related to a particular project and in this case related to the starter kit. In the subsequent chapters, the resources created here will need to be looked up and following are the instructions on how to go to the Resource Group detail page which is one method of looking up previously created resource (subsequent chapter do refer to this section when there is a need to find a resource).
+
+1. Expand the menu on the Azure Portal by clicking menu icon on top left corner and then click *Resource Groups*.
+
+<img src="./images/ResourceGroupMenuItem.gif" alt="Cognitive Service Created Notification" width="80%" height="80%"/>
+
+2. List of all Resource Groups is displayed.
+
+3. Click the Resource Group used for this starter kit (created in Task 1 above) and list of all the resources related to the starter kit are displayed.
+
+<img src="./images/ResourceGroupResources.gif" alt="Cognitive Service Created Notification" width="80%" height="80%"/>
+
 
 ***
 
