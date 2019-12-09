@@ -74,7 +74,7 @@ All Resources for the solution will be created in a Resource Group
 
 	d. Enter the Storage Account details - select the newly created Resource Group, specify storage account name which needs to be globally unique (add numbers like 123, 456, etc. whatever to make it unique), select location same as the resource group from Task 1, leave remaining selection as default and click *Review + create* button on bottom left
 
-<img src="./images/StorageAccountDetail.GIF" alt="Storage Account Detail" width="50%" height="50%"/>
+<img src="./images/StorageAccountDetail.GIF" alt="Storage Account Detail" width="80%" height="80%"/>
 
 3. Review the Storage Account details and click *Create* button
 
@@ -101,7 +101,7 @@ An empty logic app will be created in this chapter so its pretty much a placehol
 
 4. Wait for the resource creation to complete, notification section on Azure Portal shows the resource creation progress 
 
-<img src="./images/ResourceCreationNotification.GIF" alt="Resource Creation Notification" width="50%" height="50%"/>
+<img src="./images/ResourceCreationNotification.GIF" alt="Resource Creation Notification" width="80%" height="80%"/>
 
 ***
 ### Task 4: Create Cognitive Service
@@ -111,15 +111,15 @@ An empty logic app will be created in this chapter so its pretty much a placehol
 
 	a. Start typing Cognitive Services, as you are typing Cognitive Services selection will be displayed below the textbox.
 	
-	b. Select Cognitive Services and Create All Cognitive Services screen is displayed.
+	b. Select Cognitive Services and Create All Cognitive Services screen is displayed (there are many different Cognitive Services, instructions guide you to create All Cognitive Services type which is important detail to keep in mind, this allows multiple Cognitive Services to be used with the same key which is a simplistic option for development).
 	
-	c. Enter the Cognitive Services detail - specify name of the service which needs to be globally unique, select location same as the resource group from Task 1, select pricing tier, select the newly created Resource Group and click *Create* button on bottom left.    
+	c. Enter the Cognitive Services detail - specify name of the service which needs to be globally unique, select location same as the resource group from Task 1, select pricing tier, select the Resource Group created in Task 1 and click *Create* button on bottom left.    
 	
-	<img src="./images/CognitiveServiceDetail.png" alt="Cognitive Service Detail" width="50%" height="50%"/>
+	<img src="./images/CognitiveServiceDetail.png" alt="Cognitive Service Detail" width="80%" height="80%"/>
 	
 	d. Wait for the resource creation to complete, notification section on Azure Portal shows the resource creation progress.
 	
-	<img src="./images/CognitiveServiceNotification.png" alt="Cognitive Service Created Notification" width="50%" height="50%"/>
+	<img src="./images/CognitiveServiceNotification.png" alt="Cognitive Service Created Notification" width="80%" height="80%"/>
 
 
 ## Review
@@ -129,7 +129,16 @@ In this chapter we created resources which will be used in building the solution
 * Logic App
 * Cognitive Services
 
-> TODO: Document the steps to open Resource Group details page on Azure Portal to review resoruces in a Resource Group
+### Resource Group Detail Page
+As explained before Resource Group is a logical container for resources, it provides an easy way to organize and find resources related to a particular project and in this case related to the starter kit. In the subsequent chapters, the resources created here will need to be looked up and following are the instructions on how to go to the Resource Group detail page which is one method of looking up previously created resource (subsequent chapter do refer to this section when there is a need to find a resource).
+
+1. Expand the menu on the Azure Portal by clicking menu icon on top left corner and then click *Resource Groups*, list of all resource groups is displayed.
+
+<img src="./images/ResourceGroupsMenu.GIF" alt="Resource Groups Menu" width="80%" height="80%"/>
+
+2. Click the Resource Group used for this starter kit (created in Task 1 above) and list of all the resources related to the starter kit are displayed.
+
+<img src="./images/ResourceGroupResources.GIF" alt="Resource Group Resources" width="80%" height="80%"/>
 
 ***
 
