@@ -1,7 +1,7 @@
 # Chapter 3 - Create an Azure Function for Reading Text from a Prescription Image
 
 ## Objective
-The business objective here is to read text from a prescription image. We'll use an Azure Function to do this. (It's a simple function, but the C# code is provided for you so no coding experience is required.) The code in Azure Function uses Azure AI Platform capabilies available as part of our Compute Vision Cognitive Service. At the end of chapter, you will be able use the AI Capabilities to read text from and image.
+The business objective here is to read text from a prescription image. We'll use an Azure Function to do this. (It's a simple function, the C# code is provided for you so no coding experience is required). The code in Azure Function uses Azure AI Platform capabilies available as part of our Compute Vision Cognitive Service. At the end of chapter, you will be able use the AI Capabilities to read text from and image.
 
 ## Azure Concepts/Terms
 * Azure Functions - Azure Functions is a solution for easily running small pieces of code, or "functions," in the cloud. It's server-less so you can write just the code you need for the problem at hand without worrying about a whole application or the infrastructure to run it.
@@ -28,6 +28,8 @@ The business objective here is to read text from a prescription image. We'll use
 
 ### Task 1: Create Read Text from Image Azure Function
 
+In this task you will create an empty Azure Function Resource.
+
 1. Expand the menu on the Azure Portal by clicking the menu icon in the top left corner and then click *+ Create a resource*
 
 2. The Azure Portal should show the New resource creation screen
@@ -53,6 +55,8 @@ The business objective here is to read text from a prescription image. We'll use
 ***
 
 ### Task 2: Specify Configuration settings for Read Text from Image Azure Function
+
+In this task you will specify a few configuration settings to the Azure Function resource created in the previous task.
 
 1. Browse to the Azure Function detail page on the Azure Portal by clicking *Go to resource* button from the deployment screen or from the Resource Group detail screen. (See Chapter 2 for steps to browse to the Resource Group Detail screen.)
 
@@ -91,6 +95,8 @@ Note - Don't forget to click the *Save* button after adding all the settings.
 ***
 
 ### Task 3: Deploy Azure Function Code
+
+In this task you will add the code to the Azure Function resoruce so that the function can be used to read text from image.
 
 1. On the Azure Function Detail page, click *Platform features* tab and then click *Container settings* under *Code Deployment* section
 
