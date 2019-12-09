@@ -134,13 +134,13 @@ As explained before Resource Group is a logical container for resources, it prov
 
 1. Expand the menu on the Azure Portal by clicking menu icon on top left corner and then click *Resource Groups*.
 
-<img src="./images/ResourceGroupMenuItem.gif" alt="Cognitive Service Created Notification" width="80%" height="80%"/>
+<img src="./images/ResourceGroupsMenu.gif" alt="Resource Groups Menu" width="80%" height="80%"/>
 
 2. List of all Resource Groups is displayed.
 
 3. Click the Resource Group used for this starter kit (created in Task 1 above) and list of all the resources related to the starter kit are displayed.
 
-<img src="./images/ResourceGroupResources.gif" alt="Cognitive Service Created Notification" width="80%" height="80%"/>
+<img src="./images/ResourceGroupResources.gif" alt="Resource Group Resources" width="80%" height="80%"/>
 
 
 ***
