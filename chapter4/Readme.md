@@ -96,4 +96,8 @@ In this task, you will be upload another test image to Azure Storage Account and
 
 ***
 
+## Review
+
+At this point you have a Logic App which uses Azure Functions, AI Capabilities of Azure Computer Vision Cognitive Sevice and Storage Account to identify the text from a medical prescription image.
+
 [Previous Chapter](../chapter3/Readme.md) | Next Chapter (coming soon)

@@ -88,7 +88,7 @@ When adding application settings it's critical you use the exact name of the set
 
 7. Add Project setting - Specify name of the setting **_PROJECT_** and set the value as **_code/MyMedAIStarterKit_Soln/ReadImageTextFuncApp_**. This setting is used for deploying the code to Azure Function
 
-**Note: Don't forget to click the _Save_ button after adding all the settings.**
+8. Don't forget to click the **_Save_** button after adding all the settings.
 
 <img src="./images/AddAppSettingsSave.GIF" alt="Azure Func - Add App Settings Save" width="80%" height="80%"/>
 
