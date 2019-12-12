@@ -160,7 +160,9 @@ In this task, you will upload a test image to Storage Account and then invoke Az
 
 ***
 
-**Congratulations! At this point, you have implemented an Azure Function which uses AI Capabilities of Azure Computer Vision Cognitive Service to read text from an image.**
+## Review 
+
+**_Congratulations!_ At this point, you have implemented an Azure Function which uses AI Capabilities of Azure Computer Vision Cognitive Service to read text from an image.**
 
 ***
 
