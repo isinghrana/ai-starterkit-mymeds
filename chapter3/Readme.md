@@ -70,25 +70,25 @@ In this task you will specify a few configuration settings to the Azure Function
     
 <img src="./images/AzureFuncAddAppSetting.GIF" alt="Azure Function - Add App Setting" width="80%" height="80%"/>
 
+When adding application settings it's critical you use the exact name of the setting as specified below so copy/paste to avoid typing mistakes.
+
+    - Specify name of the setting *StorageConnectionString* and set the value to connection string of the Storage Account found on the *Access Keys* page of the Storage Account (see the second screenshot on how to lookup the Storage Account Connection String).
+
 <img src="./images/AzureFuncAddAppSetting2.GIF" alt="Azure Function - Add App Setting" width="80%" height="80%"/>
-
-It's critical you use the exact name of the setting as specified below so copy/paste to avoid typing mistakes.
-
-    a. Specify name of the setting *StorageConnectionString* and set the value to connection string of the Storage Account found on the *Access Keys* page of the Storage Account.
 
 <img src="./images/StorageAccountConnectionString.GIF" alt="Storage Account Connection String" width="80%" height="80%"/>
     
-    b. Specify name of the setting *CognitiveServiceKey* and set the value to the key of the Cognitive Service found from *Keys* page of the Cognitive Service.
+    - Specify name of the setting *CognitiveServiceKey* and set the value to the key of the Cognitive Service found from *Keys* page of the Cognitive Service.
 
 <img src="./images/CognitiveServiceKey.GIF" alt="Cognitive Service Key" width="80%" height="80%"/>
 
-    c. Specify name of the setting *CognitiveServiceEndpoint* and set the value to the Endpoint for the Cognitive Service.
+    - Specify name of the setting *CognitiveServiceEndpoint* and set the value to the Endpoint for the Cognitive Service.
 
 <img src="./images/CognitiveServiceEndpoint.GIF" alt="Cognitive Service Endpoint" width="80%" height="80%"/>
 
-    d. Specify name the setting *PROJECT* and set the value as *code/MyMedAIStarterKit_Soln/ReadImageTextFuncApp*. This setting is used for deploying the code to Azure Function
+    - Specify name the setting *PROJECT* and set the value as *code/MyMedAIStarterKit_Soln/ReadImageTextFuncApp*. This setting is used for deploying the code to Azure Function
 
-Note - Don't forget to click the *Save* button after adding all the settings.
+Note: Don't forget to click the *Save* button after adding all the settings.
 
 <img src="./images/AddAppSettingsSave.GIF" alt="Azure Func - Add App Settings Save" width="80%" height="80%"/>
 
