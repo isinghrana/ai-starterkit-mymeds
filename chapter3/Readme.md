@@ -72,7 +72,7 @@ In this task you will specify a few configuration settings to the Azure Function
 
 When adding application settings it's critical you use the exact name of the setting as specified below so copy/paste to avoid typing mistakes.
 
-   a. Specify name of the setting *StorageConnectionString* and set the value to connection string of the Storage Account found on the *Access Keys* page of the Storage Account (see the second screenshot on how to lookup the Storage Account Connection String).
+    i. Specify name of the setting *StorageConnectionString* and set the value to connection string of the Storage Account found on the *Access Keys* page of the Storage Account (see the second screenshot on how to lookup the Storage Account Connection String).
 
 <img src="./images/AzureFuncAddAppSetting2.GIF" alt="Azure Function - Add App Setting" width="80%" height="80%"/>
 
