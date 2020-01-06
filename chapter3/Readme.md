@@ -75,6 +75,8 @@ When adding application settings it's critical you use the exact name of the set
 
 4. Add Storage Connection String Setting - This setting is required so that Azure Function can connect to the Storage Account where image file will be uploaded. Specify name of the setting **_StorageConnectionString_** and set the value to connection string of the Storage Account found on the **_Access Keys_** page of the Storage Account (see the second screenshot on how to lookup the Storage Account Connection String).
 
+> Note: If you browse away from Azure Function Application Settings screen without hitting *Save* button your changes will be lost. You will be copying the value from Storage Account and Cognitive Services Account detail screens and pasting them into Azure Function Application Setting screen so it might be easier to open two tabs, one to keep the Azure Function Application Setting page open and the other where you can browse to respective service web pages to copy the setting value. 
+
 <img src="./images/AzureFuncAddAppSetting2.GIF" alt="Azure Function - Add App Setting" width="80%" height="80%"/>
 
 <img src="./images/StorageAccountConnectionString.GIF" alt="Storage Account Connection String" width="80%" height="80%"/>
