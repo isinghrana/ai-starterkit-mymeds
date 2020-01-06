@@ -70,7 +70,7 @@ All Resources for the solution will be created in a Resource Group
 
 	b. Select Storage Account and Storage Account creation screen is displayed
 
-	c. Click Create and Storage Account Detail screen is displayed
+	c. Click *Create* button and Storage Account Detail screen is displayed
 
 	d. Enter the Storage Account details - select the newly created Resource Group, specify storage account name which needs to be globally unique (add numbers like 123, 456, etc. whatever to make it unique), select location same as the resource group from Task 1, leave remaining selection as default and click *Review + create* button on bottom left
 
@@ -105,13 +105,15 @@ An empty logic app will be created in this chapter so its pretty much a placehol
 
 ***
 ### Task 4: Create Cognitive Service
-1. Expand the menu on the Azure Portal by clicking menu icon on top left corner and then click + Create a resource
+1. Expand the menu on the Azure Portal by clicking menu icon on top left corner and then click *+ Create a resource*
 
 2. At this point Azure Portal should show New resource creation screen
 
-	a. Start typing Cognitive Services, as you are typing Cognitive Services selection will be displayed below the textbox.
+	a. Start typing *Cognitive Services*, as you are typing Cognitive Services selection will be displayed below the textbox.
 	
-	b. Select Cognitive Services and Create All Cognitive Services screen is displayed (there are many different Cognitive Services, instructions guide you to create All Cognitive Services type which is important detail to keep in mind, this allows multiple Cognitive Services to be used with the same key which is a simplistic option for development).
+	b. Select Cognitive Services and Cognitive Service creation screen is displayed.
+	
+	c. Click *Create* button and Cognitive Services creation screen is displayed (Note: there are many different Cognitive Services, the instructions here guide you to create All Cognitive Services type which is an important detail to keep in mind, this allows multiple Cognitive Services to be used with the same key which is a simplistic option for development. Currently you will only be using Computer Vision Cognitive Service).
 	
 	c. Enter the Cognitive Services detail - specify name of the service which needs to be globally unique, select location same as the resource group from Task 1, select pricing tier, select the Resource Group created in Task 1 and click *Create* button on bottom left.    
 	
