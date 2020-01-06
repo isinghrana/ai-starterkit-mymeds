@@ -3,6 +3,12 @@
 ## Objective
 The business objective is to read text from a prescription image. We'll use an Azure Function to do this (it's a simple function, the C# code is provided for you so no coding experience is required). The code in Azure Function uses Azure AI Platform capabilies available as part of our Computer Vision Cognitive Service. At the end of chapter, you will be able use the AI Capabilities to read text from and image. In this chapter we will only create and enter some configuration for the Azure Function, Azure Function code deployment and testing will be done in the next chapter.
 
+The following diagram highlights the Azure Function which will be added to the solution in this chatper, you will start setting up the function but it won't be usable yet. Code Deployment to make the Azure Function operational will be added in the next chapter.
+
+<img src="./images/architecturediagram3.gif" alt="Architecture" width="80%" height="80%"/>
+
+
+
 ## Azure Concepts/Terms
 * Azure Functions - Azure Functions is a solution for easily running small pieces of code, or "functions," in the cloud. It's server-less so you can write just the code you need for the problem at hand without worrying about a whole application or the infrastructure to run it.
 

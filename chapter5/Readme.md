@@ -3,6 +3,12 @@
 ## Objective
 The business objective is to take action when an prescription label image is uploaded. You'll create a Logic App to run when a new image is uploaded to Azure Storage Account. The Logic App invokes the Read Text from Image Azure Function (created in previous chapter) to read the text from image.
 
+The following diagram shows section of the overall solution which will be operational by end of this chapter. You will have a functional Logic App which automatically runs as soon as the image is uploaded to Azure Storage Account, it will use Azure Function and Computer Vision Cognitive Service to read text from the prescription image.
+
+<img src="./images/architecturediagram5.gif" alt="Architecture" width="80%" height="80%"/>
+
+
+
 > Note: In the subsequent chapters, this Logic App will be further enhanced with steps where AI is used to identify the Medicine informaton from the image text.
 
 ***

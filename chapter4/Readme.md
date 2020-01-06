@@ -3,6 +3,11 @@
 ## Objective
 The business objective is to read text from a prescription image. In this chatper we will deploy the code for Azure Function and test it to read text from image using AI Capabilties of Azure Computer Vision Cognitive Service.
 
+The following diagram shows Azure Function function operational by end of this chapter. You will be able to run the Azure Function from Azure Portal to read from an image uploaded to Azure Storage Account. Azure Function will invoke Computer Vision Cognitive Service to read the image. 
+
+<img src="./images/architecturediagram4.gif" alt="Architecture" width="80%" height="80%"/>
+
+
 
 ### Contents
 

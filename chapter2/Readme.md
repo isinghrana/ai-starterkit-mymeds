@@ -1,7 +1,12 @@
 # Chapter 2 - Resource Creation
 
 ## Objective
-Create Resources to be used for the solution in the subsequent chapters 
+Create Resources to be used for the solution in the subsequent chapters.
+
+The following diagram highlights the resources which will be created in this chapter, these will be just empty resources without any content.
+
+<img src="./images/architecturediagram2.gif" alt="Architecture" width="80%" height="80%"/>
+
 
 ## Azure Concepts/Terms 
 
