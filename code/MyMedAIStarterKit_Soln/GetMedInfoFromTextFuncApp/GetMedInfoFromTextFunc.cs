@@ -9,7 +9,8 @@ using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using System.Net.Http;
 using System.Collections.Generic;
-
+using Azure;
+using Azure.AI.TextAnalytics;
 namespace GetMedInfoFromTextFuncApp
 {
     /// <summary>
@@ -19,6 +20,9 @@ namespace GetMedInfoFromTextFuncApp
     /// </summary>
     public static class GetMedInfoFromTextFunc
     {
+        private const string TEXTANALYTICS_ENDPOINT = "TextAnalyticsEndpoint";
+        private const string TEXTANALYTICS_KEY = "TextAnalyticsKey";
+
         [FunctionName("GetMedInfoFromText")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "post", Route = null)] HttpRequestMessage req,
@@ -28,26 +32,73 @@ namespace GetMedInfoFromTextFuncApp
 
             string inputText = await req.Content.ReadAsStringAsync();
             log.LogInformation($"Input Text Received - {inputText}");
-                        
-            //TODO: For now return hard-coded value, once the External Api for Med Info detection is 
-            //      implemented this function can be updated 
-            /*if no info identified then 
+
+            string endpoint = GetEnvVarValue(TEXTANALYTICS_ENDPOINT);
+            string apiKey = GetEnvVarValue(TEXTANALYTICS_KEY);
+            var client = new TextAnalyticsClient(new Uri(endpoint), new AzureKeyCredential(apiKey));
+
+            List<string> batchInput = new List<string>()
             {
-                return new NotFoundObjectResult("No Medication Label identified in the text");
-            }
-            else*/
-            //{
-                return new JsonResult(new MedInfoFromTextOutput()
+                inputText
+            };
+
+            AnalyzeHealthcareEntitiesOperation healthOperation = await client.StartAnalyzeHealthcareEntitiesAsync(batchInput);
+            await healthOperation.WaitForCompletionAsync();
+
+            log.LogInformation($"Created On   : {healthOperation.CreatedOn}");
+            log.LogInformation($"Expires On   : {healthOperation.ExpiresOn}");
+            log.LogInformation($"Status       : {healthOperation.Status}");
+            log.LogInformation($"Last Modified: {healthOperation.LastModified}");
+
+            List<JsonResult> entityOutput = new List<JsonResult>();
+
+            await foreach (AnalyzeHealthcareEntitiesResultCollection documentsInPage in healthOperation.Value)
+            {
+                log.LogInformation($"Results of Azure Text Analytics \"Healthcare Async\" Model, version: \"{documentsInPage.ModelVersion}\"");
+                log.LogInformation("");
+
+                foreach (AnalyzeHealthcareEntitiesResult entitiesInDoc in documentsInPage)
                 {
-                    MedName = "Nexium",
-                    MedNameScore = .95,
-                    MedDosage = "1 Tablet",
-                    MedDosageScore = .75,
-                    MedFrequency = "Twice Daily",
-                    MedFrequencyScore = .87
-                }                    
-                    );
-            //}
+                    if (!entitiesInDoc.HasError)
+                    {
+                        foreach (var entity in entitiesInDoc.Entities)
+                        {
+                            // view recognized healthcare entities
+                            log.LogInformation($"  Entity: {entity.Text}");
+                            log.LogInformation($"  Category: {entity.Category}");
+                            log.LogInformation($"  Offset: {entity.Offset}");
+                            log.LogInformation($"  Length: {entity.Length}");
+                            log.LogInformation($"  NormalizedText: {entity.NormalizedText}");
+                            log.LogInformation($"  Links:");
+
+                            JsonResult entityJson = new JsonResult(new TA4HEntityOutput()
+                            {
+                                Entity= $"{entity.Text}",
+                                Category= $"{entity.Category}",
+                                NormalizedText= $"{entity.NormalizedText}"
+                            }
+                                );
+
+                            entityOutput.Add(entityJson);
+                        }
+                    }
+                    else
+                    {
+                        log.LogInformation("  Error!");
+                        log.LogInformation($"  Document error code: {entitiesInDoc.Error.ErrorCode}.");
+                        log.LogInformation($"  Message: {entitiesInDoc.Error.Message}");
+                    }
+
+                    log.LogInformation("");
+                }
+            }
+            string finalJson = JsonConvert.SerializeObject(entityOutput, Formatting.Indented);
+            return new JsonResult(finalJson);
+        }
+
+        private static string GetEnvVarValue(string name)
+        {
+            return Environment.GetEnvironmentVariable(name, EnvironmentVariableTarget.Process);
         }
     }
 
@@ -66,6 +117,14 @@ namespace GetMedInfoFromTextFuncApp
 
         public string MedFrequency { get; set; }
         public double MedFrequencyScore { get; set; }
+    }
+
+    public class TA4HEntityOutput
+    {
+        public string Entity { get; set; }
+        public string Category { get; set; }
+
+        public string NormalizedText { get; set; }
     }
 
 
